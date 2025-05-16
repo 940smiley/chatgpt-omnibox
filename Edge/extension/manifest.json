@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Omnibox for Edge",
+  "description": "Query ChatGPT instantly from the Edge address bar.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "ChatGPT Omnibox",
+    "default_icon": {
+      "16": "../icons/icon16.png",
+      "32": "../icons/icon32.png",
+      "48": "../icons/icon48.png",
+      "128": "../icons/icon128.png"
+    }
+  },
+  "omnibox": { "keyword": "gpt" },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icons/chatgpt/with-magnifying-glass/icon16.png",
+    "32": "images/icons/chatgpt/with-magnifying-glass/icon32.png",
+    "48": "images/icons/chatgpt/with-magnifying-glass/icon48.png",
+    "128": "images/icons/chatgpt/with-magnifying-glass/icon128.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*"
+  ],
+  "default_locale": "en"
+}

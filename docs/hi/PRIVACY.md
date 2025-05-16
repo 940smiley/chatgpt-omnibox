@@ -10,10 +10,12 @@
     </h6>
 </div>
 
-# गोपनीयता नीति
+# Privacy Policy
 
-ChatGPT Omnibox किसी भी उपयोगकर्ता डेटा को न तो एकत्रित करता है और न ही संग्रहीत करता है। व्यक्तिगत रूप से लक्षित, व्यवहारिक विपणन या किसी अन्य उद्देश्य के लिए किसी भी जानकारी को तीसरे पक्ष के साथ साझा नहीं किया जाता है। किसी भी तीसरे पक्ष से कोई जानकारी एकत्र नहीं की जाती है।
+**ChatGPT Omnibox for Edge** does not collect, store, or transmit any personal data.
 
-## अपडेट
+- The extension only interacts with the ChatGPT website when you use the omnibox or click the extension icon.
+- No user data is sent to any third-party servers.
+- All permissions requested are strictly necessary for the extension’s core functionality.
 
-इस नीति में संशोधन देखने के लिए, https://github.com/adamlui/ai-web-extensions/commits/main/chatgpt-omnibox/docs/hi/PRIVACY.md पर जाएं
+For questions or concerns, please contact the developer via the Edge Add-ons store listing.

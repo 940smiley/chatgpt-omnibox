@@ -27,9 +27,10 @@ esac ; done
 # Init manifest PATHS
 chromium_manifest_path="chromium/extension/manifest.json"
 ff_manifest_path="firefox/extension/manifest.json"
+edge_manifest_path="edge/extension/manifest.json"
 if [ "$chromium_only" = true ] ; then MANIFEST_PATHS=$(echo "$chromium_manifest_path" | grep -i 'chrom')
 elif [ "$ff_only" = true ] ; then MANIFEST_PATHS=$(echo "$ff_manifest_path" | grep -i 'firefox')
-else MANIFEST_PATHS=("$chromium_manifest_path" "$ff_manifest_path") ; fi
+else MANIFEST_PATHS=("$chromium_manifest_path" "$ff_manifest_path" "$edge_manifest_path") ; fi
 
 # BUMP versions
 if (( ${#MANIFEST_PATHS[@]} > 1 )) ; then manifest_label="manifests"
@@ -51,7 +52,8 @@ for manifest_path in "${MANIFEST_PATHS[@]}" ; do
 
     # Echo begin bump
     if [ "$chromium_only" = true ] ; then manifest_prefix="Chromium"
-    elif [ "$ff_only" = true ] ; then manifest_prefix="Firefox" ; fi
+    elif [ "$ff_only" = true ] ; then manifest_prefix="Firefox"
+    else manifest_prefix="Edge" ; fi
     echo "Bumping version in ${manifest_prefix} manifest..."
 
     # Determine old/new versions
